@@ -20,7 +20,7 @@
 #include <QCommandLineParser>
 #include <QProcess>
 
-#include "rtklib.h"
+#include "../../../src/rtklib.h"
 #include "launchmain.h"
 
 //---------------------------------------------------------------------------

@@ -33,11 +33,11 @@
 #include "fileoptdlg.h"
 #include "tcpoptdlg.h"
 #include "ftpoptdlg.h"
-#include "cmdoptdlg.h"
+#include "appcmn_qt/cmdoptdlg.h"
 #include "convdlg.h"
-#include "aboutdlg.h"
+#include "appcmn_qt/aboutdlg.h"
 #include "refdlg.h"
-#include "console.h"
+#include "appcmn_qt/console.h"
 #include "svrmain.h"
 
 //---------------------------------------------------------------------------

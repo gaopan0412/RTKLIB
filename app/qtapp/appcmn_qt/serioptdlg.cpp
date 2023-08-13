@@ -2,9 +2,9 @@
 // ported to Qt by Jens Reimann
 #include <stdio.h>
 
-#include "cmdoptdlg.h"
+#include "appcmn_qt/cmdoptdlg.h"
 #include "serioptdlg.h"
-#include "cmdoptdlg.h"
+#include "appcmn_qt/cmdoptdlg.h"
 
 #include <QShowEvent>
 #include <QWidget>

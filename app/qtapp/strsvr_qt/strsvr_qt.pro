@@ -16,7 +16,7 @@ lessThan(QT_MAJOR_VERSION, 5) {
 }
 
 
-INCLUDEPATH += ../../src/ ../appcmn_qt
+INCLUDEPATH += ../../../src/ ../appcmn_qt
 
 linux{
     RTKLIB =../../src/libRTKLib.a
@@ -24,9 +24,9 @@ linux{
 }
 win32 {
     CONFIG(debug) {
-        RTKLIB = ../../src/debug/libRTKLib.a
+        RTKLIB = ../../../src/debug/libRTKLib.a
     } else {
-        RTKLIB =../../src/release/libRTKLib.a
+        RTKLIB =../../../src/release/libRTKLib.a
     }
 
     LIBS+= $${RTKLIB} -lWs2_32 -lwinmm
@@ -43,11 +43,11 @@ SOURCES += \
     strsvr.cpp \
     svrmain.cpp \
     svroptdlg.cpp \
-    ../appcmn_qt/aboutdlg.cpp \
+    ../appcmn_qt/appcmn_qt/aboutdlg.cpp \
     ../appcmn_qt/tcpoptdlg.cpp \
     ../appcmn_qt/serioptdlg.cpp \
-    ../appcmn_qt/cmdoptdlg.cpp \
-    ../appcmn_qt/console.cpp \
+    ../appcmn_qt/appcmn_qt/cmdoptdlg.cpp \
+    ../appcmn_qt/appcmn_qt/console.cpp \
     ../appcmn_qt/fileoptdlg.cpp \
     ../appcmn_qt/ftpoptdlg.cpp \
     ../appcmn_qt/refdlg.cpp \
@@ -60,8 +60,8 @@ HEADERS  += \
     ../appcmn_qt/tcpoptdlg.h \
     ../appcmn_qt/serioptdlg.h \
     ../appcmn_qt/aboutdlg.h \
-    ../appcmn_qt/cmdoptdlg.h \
-    ../appcmn_qt/console.h \
+    ../appcmn_qt/appcmn_qt/cmdoptdlg.h \
+    ../appcmn_qt/appcmn_qt/console.h \
     ../appcmn_qt/fileoptdlg.h \
     ../appcmn_qt/ftpoptdlg.h \
     ../appcmn_qt/refdlg.h \
@@ -73,8 +73,8 @@ FORMS    += \
     svroptdlg.ui \
     ../appcmn_qt/tcpoptdlg.ui \
     ../appcmn_qt/serioptdlg.ui \
-    ../appcmn_qt/aboutdlg.ui \
-    ../appcmn_qt/cmdoptdlg.ui \
+    ../appcmn_qt/appcmn_qt/aboutdlg.ui \
+    ../appcmn_qt/appcmn_qt/cmdoptdlg.ui \
     ../appcmn_qt/console.ui \
     ../appcmn_qt/fileoptdlg.ui \
     ../appcmn_qt/ftpoptdlg.ui \
